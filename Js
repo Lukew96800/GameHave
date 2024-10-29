@@ -1,0 +1,10 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const games = ['Game 1', 'Game 2', 'Game 3'];
+  const gamesList = document.getElementById('games');
+  
+  games.forEach(function(game) {
+    const li = document.createElement('li');
+    li.textContent = game;
+    gamesList.appendChild(li);
+  });
+});
